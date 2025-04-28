@@ -30,15 +30,13 @@
         <nav class="col-span-12 md:col-span-3 bg-gray-800 text-white p-10">
             <h2 class="text-xl font-bold mb-4">Wide</h2>
             <ul class="space-y-2">
-                <li><a href="#" class="hover:underline">Home</a></li>
-                <li><a href="#features" class="hover:underline">Features</a></li>
-                <li><a href="#examples" class="hover:underline">Examples</a></li>
-                <li><a href="#docs" class="hover:underline">Documentation</a></li>
+                <li><a href="#" class="hover:underline">Documentation</a></li>
+                <li><a href="#play" class="hover:underline">Playground</a></li>
             </ul>
         </nav>
 
-        <main class="col-span-12 md:col-span-9 p-10">
-            <div class="container mx-auto" style="padding-bottom: 300px;">
+        <main class="col-span-12 md:col-span-9 p-10" style="padding-bottom: 300px;">
+            <div class="container mx-auto">
                 <h1 class="text-3xl font-bold pb-7">
                     🧡 Wide Programming Language
                 </h1>
@@ -170,7 +168,7 @@
                 <ul class="list-disc ml-10">
                     <li><strong><em>is not</em></strong>,</li>
                     <li><strong><em>negation of</em></strong>,</li>
-                    <li>or <strong><em>it can not be</em></strong>.</li>
+                    <li>or <strong><em>it can not be</em></strong> <em>(something)</em>.</li>
                 </ul>
 
 
@@ -192,34 +190,34 @@
 
                 <pre class="bg-gray-200 p-5  rounded-lg">
 <em class="text-gray-500">` You read: "isRaining" "is of type" "boolean" "and is assigned the value of" "true"</em>
-isRaining:? = 1
+<em>isRaining</em>:? = 1
 
 <em class="text-gray-500">` "windDirectionInitial" "is of type" "char" "and is assigned the value of" "N"</em>
-windDirectionInitial:'' = 'N'
+<em>windDirectionInitial:'' = 'N'
 
 <em class="text-gray-500">` "stationName" "is of type" "string" "and is assigned the value of " "Mauna Loa Observatory"</em>
-stationName:"" = "Mauna Loa Observatory"
+stationName</em>:"" = "Mauna Loa Observatory"
 
 <em class="text-gray-500">` "stationID" "is of type" "integer" "and is assigned the value of" "72528"</em>
-stationID:0 = 72528
+<em>stationID</em>:0 = 72528
 
 <em class="text-gray-500">` "currentTemperatureCelsius" "is of type" "float" "and is assigned the value of" "15.5"</em>
-currentTemperatureCelsius:0.0 = 15.5
+<em>currentTemperatureCelsius</em>:0.0 = 15.5
 
 <em class="text-gray-500">` "atmosphericCO2ppm" "is of type" "double" "and is assigned the value of" "425.789"</em>
-atmosphericCO2ppm:0.00 = 425.789
+<em>atmosphericCO2ppm</em>:0.00 = 425.789
 
-<em class="text-gray-500">` "station" "is of type" "object" "and is assigned the value from object"
+<em class="text-gray-500">` "station" "is of type" "object" "and is assigned the value from an object"
 ` "such having properties: isRaining, windDirectionInitial, stationName,
 ` stationID, currentTemperatureCelsius, and atmosphericCO2ppm" </em>
-station:<> = &lt;
-    isRaining:? = 1
-    windDirectionInitial:'' = 'N'
-    stationName:"" = "Mauna Loa Observatory"
-    stationID:0 = 72528
-    currentTemperatureCelsius:0.0 = 15.5
-    atmosphericCO2ppm:0.00 = 425.789
->
+<em>station</em>:<> = &lt;
+    <em>isRaining</em>:? = 1
+    <em>windDirectionInitial</em>:'' = 'N'
+    <em>stationName</em>:"" = "Mauna Loa Observatory"
+    <em>stationID</em>:0 = 72528
+    <em>currentTemperatureCelsius</em>:0.0 = 15.5
+    <em>atmosphericCO2ppm</em>:0.00 = 425.789
+/>
 </pre>
                 <div class="bg-blue-100 border border-1 border-blue-900 rounded-lg px-5 py-3 mt-5">
                     <h6 class="text-sm font-bold">Important</h6>
@@ -229,28 +227,96 @@ station:<> = &lt;
                         since the compiler is able to find by itself what to use based on the assigned values.
                     </p>
                     <br>
-                    <p>The only exception is for the <strong>boolean</strong> data type.</p>
+                    <p class="pb-3">The only exception is for the <strong>boolean</strong> data type.</p>
                     <p>Also, you can use <code class="bg-yellow-100 px-1">:=</code> together to improve readability.</p>
                 </div>
 
                 <pre class="bg-gray-200 p-5 mt-5  rounded-lg">
 <em class="text-gray-500">` You just read the same as before</em>
 
-isRaining:? = 1
-windDirectionInitial:= 'N'
-stationName:= "Mauna Loa Observatory"
-stationID:= 72528
-currentTemperatureCelsius:= 15.5
-atmosphericCO2ppm:= 425.789
-station:= &lt;
-    isRaining:? = 1
-    winDirectionInitial:= 'N'
-    stationName:= "Mauna Loa Observatory"
-    stationID:= 72528
-    currentTemperatureCelsius:= 15.5
-    atmosphericCO2ppm:= 425.789
-></pre>
+<em>isRaining</em>:? = 1
+<em>windDirectionInitial</em>:= 'N'
+<em>stationName</em>:= "Mauna Loa Observatory"
+<em>stationID</em>:= 72528
+<em>currentTemperatureCelsius</em>:= 15.5
+<em>atmosphericCO2ppm</em>:= 425.789
+<em>station</em>:= &lt;
+    <em>isRaining</em>:? = 1
+    <em>winDirectionInitial</em>:= 'N'
+    <em>stationName</em>:= "Mauna Loa Observatory"
+    <em>stationID</em>:= 72528
+    <em>currentTemperatureCelsius</em>:= 15.5
+    <em>atmosphericCO2ppm</em>:= 425.789
+/></pre>
             </div>
+            <h4 class="text-2xl font-bold pt-10 pb-3">
+                Default Values
+            </h4>
+            <p>
+                When the type is passed followed by <strong>no assigned value</strong> a default value will be
+                automatically assigned.
+            </p>
+            <p>It's mostly a zero, except for <strong>string</strong> and <strong>object</strong> types.</p>
+            <p>These values will be used until you manually assign another.</p>
+
+            <pre class="bg-gray-200 p-5 mt-5  rounded-lg">
+<em class="text-gray-500">` default value is 0 (false)</em>
+isRaining:?
+
+<em class="text-gray-500">` default value is 0 (vazio)</em>
+windDirectionInitial:''
+
+<em class="text-gray-500">` default value is vazio</em>
+stationName:""
+
+<em class="text-gray-500">` default value is 0</em>
+stationID:0
+
+<em class="text-gray-500">` default value is 0.0</em>
+currentTemperatureCelsius:0.0
+
+<em class="text-gray-500">` default value is 0.00</em>
+atmosphericCO2ppm:0.00
+
+<em class="text-gray-500">` default value is <>, also called a 'Fragment'.</em>
+station:<></pre>
+
+            <p class="pt-5">This is also true for the objects' properties:</p>
+            <pre class="bg-gray-200 p-5 mt-5  rounded-lg">
+<em>station</em>:= &lt;
+    <em>isRaining</em>:?
+    <em>winDirectionInitial</em>:''
+    <em>stationName</em>:""
+    <em>stationID</em>:0
+    <em>currentTemperatureCelsius</em>:0.0
+    <em>atmosphericCO2ppm</em>:0.00
+/></pre>
+
+            <h4 class="text-2xl font-bold pt-10 pb-3">
+                Printing on Screen
+            </h4>
+            <p>
+                That seems nice, but how do you print on screen?
+            </p>
+            <p>To print on screen you just enclose what you want to print inside <strong>double quotes</strong> ""</p>
+
+            <pre class="bg-gray-200 p-5 mt-5  rounded-lg">
+<strong class="text-red-800">"Hello, Wide!"</strong>
+</pre>
+            <h4 class="text-2xl font-bold pt-10 pb-3">
+                Interpolation
+            </h4>
+            <p>You can use <strong>curly braces</strong> to dinamically output values:</p>
+
+            <pre class="bg-gray-200 p-5 mt-5  rounded-lg">
+<em>name</em>:= "Wide"
+<strong class="text-red-800">"Hello, {name}!"</strong> <em class="text-gray-500">`outputs: "Hello, Wide!"</em>
+
+<em>price:=</em> 9.99
+<strong class="text-red-800">"It's ${9.99}."</strong> <em class="text-gray-500">`outputs: "It's, $9.99."</em>
+</pre>
+
+            <!-- FIM DE MAIN -->
         </main>
     </div>
 </body>
