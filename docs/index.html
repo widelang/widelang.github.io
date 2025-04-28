@@ -1,1 +1,265 @@
-Hello, Wide!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wide Programming Language Documentation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: "Instrument Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            line-height: 2rem;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50 min-h-screen text-xl">
+    <div class="grid grid-cols-12 min-h-screen">
+
+        <nav class="col-span-12 md:col-span-3 bg-gray-800 text-white p-10">
+            <h2 class="text-xl font-bold mb-4">Wide</h2>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#features" class="hover:underline">Features</a></li>
+                <li><a href="#examples" class="hover:underline">Examples</a></li>
+                <li><a href="#docs" class="hover:underline">Documentation</a></li>
+            </ul>
+        </nav>
+
+        <main class="col-span-12 md:col-span-9 p-10">
+            <div class="container mx-auto" style="padding-bottom: 300px;">
+                <h1 class="text-3xl font-bold pb-7">
+                    🧡 Wide Programming Language
+                </h1>
+                <p>Last revision: <em>2025-04-27</em></p>
+
+                <h2 class="py-6 font-bold">
+                    Some Facts
+                </h2>
+
+                <ul class="list-disc ml-10">
+                    <li>
+                        Interestingly, its name is inspired by the World Wide Web.
+                    </li>
+                    <li>
+                        What's really cool is that it was designed to avoid using keywords from any specific human
+                        language.
+                    </li>
+                    <li>
+                        This makes programming potentially accessible to everyone, regardless of their native tongue!
+                    </li>
+                    <li>
+                        It's declarative, meaning you tell it what you want, rather than how to do it.
+                    </li>
+                    <li>
+                        This approach helps bridge the gap between servers and clients in web applications and beyond.
+                    </li>
+                    <li>
+                        It's aiming to fundamentally shift how people program, perhaps making it more intuitive.
+                    </li>
+                    <li>
+                        While being human-centered in its design, it's also deeply focused on the world of Artificial
+                        Intelligence.
+                    </li>
+                    <li>
+                        The goal is to be simple, easy to pick up, yet complete and incredibly capable.
+                    </li>
+                </ul>
+
+                <hr class="my-10">
+
+                <h2 class="py-6 font-bold text-3xl">
+                    Language Type System
+                </h2>
+
+                <p><strong>Wide</strong> itself has no Keywords like most programming languages do.</p>
+                <p>It's basic type system looks like this:</p>
+
+                <table class="table-auto border-collapse border border-gray-300 w-full text-left mt-5">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="border border-gray-300 px-4 py-2 font-bold">Symbol</th>
+                            <th class="border border-gray-300 px-4 py-2 font-bold">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2 font-bold">?</td>
+                            <td class="border border-gray-300 px-4 py-2">Boolean (1 for true, 0 for false)
+                                <em>(true/false, yes/no, on/off</em>)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2 font-bold">''</td>
+                            <td class="border border-gray-300 px-4 py-2">Char <em>(single letter or digit)</em></td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2 font-bold">""</td>
+                            <td class="border border-gray-300 px-4 py-2">String <em>(words or text)</em></td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2 font-bold">0</td>
+                            <td class="border border-gray-300 px-4 py-2">Integer numbers (positive and negative)
+                                <em>(0, 10, 100, 999)</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2 font-bold">0.0</td>
+                            <td class="border border-gray-300 px-4 py-2">Float numbers (positive and negative)
+                                <em> (20.5%, 25.6°C, 10.9km, ) </em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2 font-bold">0.00</td>
+                            <td class="border border-gray-300 px-4 py-2">Double numbers (positive and negative)
+                                <em>(Pi(π)3.14159265358979323846, -23.5505200 lat, -46.6333094 lng)</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2 font-bold">&lt;&gt;</td>
+                            <td class="border border-gray-300 px-4 py-2">Object
+                                <em>(Person, Vehicle, Dropdown, Box)</em>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <p class="mt-10">If you want to make any good use of them you <strong>must</strong> know 3 operators
+                    used to give them meaning and context.</p>
+
+                <h4 class="text-2xl font-bold pt-10 pb-3">
+                    : Type Operator
+                </h4>
+                <p>
+                    When you see it you may say:
+                </p>
+                <ul class="list-disc ml-10">
+                    <li><strong><em>it's of type</em></strong></li>
+                    <li>or <strong><em>it returns the type</em></strong></li>
+                </ul>
+
+                <div class="bg-blue-100 border border-1 border-blue-900 rounded-lg px-5 py-3 mt-2">
+                    <h6 class="text-sm font-bold">Note</h6>
+                    <p>⚠️ If used alone it means:</p>
+                    <ul class="list-disc ml-10">
+                        <li><strong><em>no type</em></strong></li>
+                        <li>or <strong><em>no return type</em></strong>.</li>
+                    </ul>
+                </div>
+
+
+
+                <h4 class="text-2xl font-bold pt-10 pb-3">
+                    ! Not Operator
+                </h4>
+                <p>
+                    When you see it you may say:
+                </p>
+                <ul class="list-disc ml-10">
+                    <li><strong><em>is not</em></strong>,</li>
+                    <li><strong><em>negation of</em></strong>,</li>
+                    <li>or <strong><em>it can not be</em></strong>.</li>
+                </ul>
+
+
+
+                <h4 class="text-2xl font-bold pt-10 pb-3">
+                    = Assigment Operator
+                </h4>
+                <p>
+                    When you see it you may say:
+                </p>
+
+                <ul class="list-disc ml-10">
+                    <li><strong><em>and is assigned the value (of, from or constant of)</em></strong></li>
+                </ul>
+
+                <h4 class="text-2xl font-bold pt-10 pb-3">
+                    Some examples
+                </h4>
+
+                <pre class="bg-gray-200 p-5  rounded-lg">
+<em class="text-gray-500">` You read: "isRaining" "is of type" "boolean" "and is assigned the value of" "true"</em>
+isRaining:? = 1
+
+<em class="text-gray-500">` "winDirectionInitial" "is of type" "char" "and is assigned the value of" "N"</em>
+winDirectionInitial:'' = 'N'
+
+<em class="text-gray-500">` "stationName" "is of type" "string" "and is assigned the value of " "Mauna Loa Observatory"</em>
+stationName:"" = "Mauna Loa Observatory"
+
+<em class="text-gray-500">` "stationID" "is of type" "integer" "and is assigned the value of" "72528"</em>
+stationID:0 = 72528
+
+<em class="text-gray-500">` "currentTemperatureCelsius" "is of type" "float" "and is assigned the value of" "15.5"</em>
+currentTemperatureCelsius:0.0 = 15.5
+
+<em class="text-gray-500">` "atmosphericCO2ppm" "is of type" "double" "and is assigned the value of" "425.789"</em>
+atmosphericCO2ppm:0.00 = 425.789
+
+<em class="text-gray-500">` "station" "is of type" "object" "and is assigned the value from object"
+` "such having properties: isRaining, winDirectionInitial, stationName,
+` stationID, currentTemperatureCelsius, and atmosphericCO2ppm" </em>
+station:<> = &lt;
+    isRaining:? = 1
+    winDirectionInitial:'' = 'N'
+    stationName:"" = "Mauna Loa Observatory"
+    stationID:0 = 72528
+    currentTemperatureCelsius:0.0 = 15.5
+    atmosphericCO2ppm:0.00 = 425.789
+>
+</pre>
+                <div class="bg-blue-100 border border-1 border-blue-900 rounded-lg px-5 py-3 mt-5">
+                    <h6 class="text-sm font-bold">Important</h6>
+                    <p class="font-bold">⚠️ Type inference could be used:</p>
+                    <p>
+                        The provided examples don't need to explicitly declare their types
+                        since the compiler is able to find by itself what to use based on the assigned values.
+                    </p>
+                    <br>
+                    <p>The only exception is for the <strong>boolean</strong> data type.</p>
+                    <p>Also, you can use <code class="bg-yellow-100 px-1">:=</code> together to improve readability.</p>
+                </div>
+
+                <pre class="bg-gray-200 p-5 mt-5  rounded-lg">
+<em class="text-gray-500">` You just read the same as before</em>
+
+isRaining:? = 1
+
+winDirectionInitial:= 'N'
+
+stationName:= "Mauna Loa Observatory"
+
+stationID:= 72528
+
+currentTemperatureCelsius:= 15.5
+
+atmosphericCO2ppm:= 425.789
+
+station:= &lt;
+    isRaining:? = 1
+    winDirectionInitial:= 'N'
+    stationName:= "Mauna Loa Observatory"
+    stationID:= 72528
+    currentTemperatureCelsius:= 15.5
+    atmosphericCO2ppm:= 425.789
+>
+                </pre>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
