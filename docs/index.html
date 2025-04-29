@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wide Programming Language Documentation</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geist+Mono:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+
     <style type="text/css">
         body {
             font-family: "Instrument Sans", sans-serif;
@@ -19,6 +22,13 @@
             font-style: normal;
             font-variation-settings: "wdth" 100;
             line-height: 2rem;
+        }
+
+        pre {
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.3rem;
         }
     </style>
 
@@ -188,35 +198,35 @@
                     Some examples
                 </h4>
 
-                <pre class="bg-gray-200 p-5  rounded-lg">
+                <pre class="bg-gray-200 p-5 rounded-lg">
 <em class="text-gray-500">` You read: "isRaining" "is of type" "boolean" "and is assigned the value of" "true"</em>
-<em>isRaining</em>:? = 1
+<em class="text-purple-900">isRaining</em><strong>:?</strong> = 1
 
 <em class="text-gray-500">` "winDirectionInitial" "is of type" "char" "and is assigned the value of" "N"</em>
-<em>winDirectionInitial:'' = 'N'
+<em class="text-purple-900">winDirectionInitial</em><strong>:''</strong> = 'N'
 
 <em class="text-gray-500">` "stationName" "is of type" "string" "and is assigned the value of " "Mauna Loa Observatory"</em>
-stationName</em>:"" = "Mauna Loa Observatory"
+<em class="text-purple-900">stationName</em><strong>:""</strong> = "Mauna Loa Observatory"
 
 <em class="text-gray-500">` "stationID" "is of type" "integer" "and is assigned the value of" "72528"</em>
-<em>stationID</em>:0 = 72528
+<em class="text-purple-900">stationID</em><strong>:0</strong> = 72528
 
 <em class="text-gray-500">` "currentTemperatureCelsius" "is of type" "float" "and is assigned the value of" "15.5"</em>
-<em>currentTemperatureCelsius</em>:0.0 = 15.5
+<em class="text-purple-900">currentTemperatureCelsius</em><strong>:0.0</strong> = 15.5
 
 <em class="text-gray-500">` "atmosphericCO2ppm" "is of type" "double" "and is assigned the value of" "425.789"</em>
-<em>atmosphericCO2ppm</em>:0.00 = 425.789
+<em class="text-purple-900">atmosphericCO2ppm</em><strong>:0.00</strong> = 425.789
 
 <em class="text-gray-500">` "station" "is of type" "object" "and is assigned the value from an object"
 ` "such having properties: isRaining, winDirectionInitial, stationName,
 ` stationID, currentTemperatureCelsius, and atmosphericCO2ppm" </em>
-<em>station</em>:<> = &lt;
-    <em>isRaining</em>:? = 1
-    <em>winDirectionInitial</em>:'' = 'N'
-    <em>stationName</em>:"" = "Mauna Loa Observatory"
-    <em>stationID</em>:0 = 72528
-    <em>currentTemperatureCelsius</em>:0.0 = 15.5
-    <em>atmosphericCO2ppm</em>:0.00 = 425.789
+<em class="text-purple-900">station</em><strong>:<></strong> = &lt;
+    <em class="text-purple-900">isRaining</em><strong>:?</strong> = 1
+    <em class="text-purple-900">winDirectionInitial</em><strong>:''</strong> = 'N'
+    <em class="text-purple-900">stationName</em><strong>:""</strong> = "Mauna Loa Observatory"
+    <em class="text-purple-900">stationID</em><strong>:0</strong> = 72528
+    <em class="text-purple-900">currentTemperatureCelsius</em><strong>:0.0</strong> = 15.5
+    <em class="text-purple-900">atmosphericCO2ppm</em><strong>:0.00</strong> = 425.789
 />
 </pre>
                 <div class="bg-blue-100 border border-1 border-blue-900 rounded-lg px-5 py-3 mt-5">
