@@ -1,0 +1,104 @@
+` You read: "isRaining" "is of type" "boolean" "and is assigned the value of" "true"
+isRaining:? = 1
+
+` "winDirectionInitial" "is of type" "char" "and is assigned the value of" "N"
+winDirectionInitial:'' = 'N'
+
+` "stationName" "is of type" "string" "and is assigned the value of " "Mauna Loa Observatory"
+stationName:"" = "Mauna Loa Observatory"
+
+` "stationID" "is of type" "integer" "and is assigned the value of" "72528"
+stationID:0 = 72528
+
+` "currentTemperatureCelsius" "is of type" "float" "and is assigned the value of" "15.5"
+currentTemperatureCelsius:0.0 = 15.5
+
+` "atmosphericCO2ppm" "is of type" "double" "and is assigned the value of" "425.789"
+atmosphericCO2ppm:0.00 = 425.789
+
+` "station" "is of type" "object" "and is assigned the value from an object"
+` "such having properties: isRaining, winDirectionInitial, stationName,
+` stationID, currentTemperatureCelsius, and atmosphericCO2ppm"
+station:<> = <
+    isRaining:? = 1
+    winDirectionInitial:'' = 'N'
+    stationName:"" = "Mauna Loa Observatory"
+    stationID:0 = 72528
+    currentTemperatureCelsius:0.0 = 15.5
+    atmosphericCO2ppm:0.00 = 425.789
+/>
+
+
+
+
+` You just read the same as before
+
+isRaining:? = 1
+winDirectionInitial:= 'N'
+stationName:= "Mauna Loa Observatory"
+stationID:= 72528
+currentTemperatureCelsius:= 15.5
+atmosphericCO2ppm:= 425.789
+station:= <
+    isRaining:? = 1
+    winDirectionInitial:= 'N'
+    stationName:= "Mauna Loa Observatory"
+    stationID:= 72528
+    currentTemperatureCelsius:= 15.5
+    atmosphericCO2ppm:= 425.789
+/>
+
+
+
+
+` default value is 0 (false)
+isRaining:?
+
+` default value is 0 (vazio)
+winDirectionInitial:''
+
+` default value is vazio
+stationName:""
+
+` default value is 0
+stationID:0
+
+` default value is 0.0
+currentTemperatureCelsius:0.0
+
+` default value is 0.00
+atmosphericCO2ppm:0.00
+
+` default value is <>, also called a 'Fragment'.
+station:<>
+
+
+
+
+station:= <
+    isRaining:?
+    winDirectionInitial:''
+    stationName:""
+    stationID:0
+    currentTemperatureCelsius:0.0
+    atmosphericCO2ppm:0.00
+/>
+
+
+
+
+"Hello, Wide!"
+
+
+
+
+name:= "Wide"
+"Hello, {name}!" `outputs: "Hello, Wide!"
+
+price:= 9.99
+"It's ${9.99}." `outputs: "It's, $9.99."
+
+
+
+
+

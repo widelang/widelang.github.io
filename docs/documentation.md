@@ -4,12 +4,23 @@ A human-first, declarative, composable programming language for the web and beyo
 
 ---
 
-## Tabela de Conteúdos
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Introduction](#introduction)
   - [What's about?](#whats-about)
   - [What's the vibe?](#whats-the-vibe)
 - [Language Type System](#language-type-system)
+  - [: Type Operator](#-type-operator)
+  - [! Not Operator](#-not-operator)
+  - [= Assigment Operator](#-assigment-operator)
+  - [Some examples](#some-examples)
+- [Default Values](#default-values)
+- [Printing on Screen](#printing-on-screen)
+  - [Interpolation](#interpolation)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
 
@@ -63,7 +74,7 @@ It's basic type system looks like this:
 |:---:|--------|--------|
 | ? | Boolean (1 para verdadeiro, 0 para falso ) | true/false, yes/no, on/off |
 | '' | Char  | letter 'A', number '1', symbol '$' |
-| " | String  | "olá", "batata-doce", "como você está?" |
+| " | String  | "hello", "sweet potatoes", "How are you?" |
 | 0 | Integer | 1, 10, 100, 999 |
 | 0.0 | Float Number | 20.5%, -5.6°C, 10.9km |
 | 0.00 | Double Number | Pi(π)3.14159265358979323846, -23.5505200 lat, -46.6333094 lng |
@@ -78,7 +89,7 @@ When you see it you may say:
 - **it's of type**
 - or **it returns the type**
 
-#### Note
+**Note**
 
 ⚠️ If used alone it means:
 
@@ -99,7 +110,7 @@ When you see it you may say:
 
 - **is assigned the value** *(of, from or constant of)*
 
-#### Some examples
+### Some examples
 
 ```wide
 ` You read: "isRaining" "is of type" "boolean" "and is assigned the value of" "true"
@@ -133,7 +144,7 @@ station:<> = <
 />
 ```
 
-#### Important
+**Important**
 
 ⚠️ Type inference could be used:
 The provided examples don't need to explicitly declare their types since the compiler is able to find by itself what to use based on the assigned values.
