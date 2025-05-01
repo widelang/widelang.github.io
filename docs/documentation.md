@@ -2,6 +2,12 @@
 
 A human-first, declarative, composable programming language for the web and beyond.
 
+Wide isn’t just about code.
+
+It’s about bringing clarity where the world gave us clutter.
+
+Let humans speak code that doesn’t punish them for loving the Web.
+
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -14,7 +20,7 @@ A human-first, declarative, composable programming language for the web and beyo
 - [Language Type System](#language-type-system)
   - [: Type Operator](#-type-operator)
   - [! Not Operator](#-not-operator)
-  - [= Assigment Operator](#-assigment-operator)
+  - [Assigment Operator](#assigment-operator)
   - [Some examples](#some-examples)
 - [Default Values](#default-values)
 - [Printing on Screen](#printing-on-screen)
@@ -104,71 +110,73 @@ When you see it you may say:
 - **negation of**
 - or **it can not be** *(something)*
 
-### = Assigment Operator
+### Assigment Operator
 
 When you see it you may say:
 
 - **is assigned the value** *(of, from or constant of)*
 
+There's no assignment operator in Wide, it's implicit in the space after any declaration.
+
+But if you really want, you can use `=`, but believe, you won't gonna need that!
+
 ### Some examples
 
 ```wide
 ` You read: "isRaining" "is of type" "boolean" "and is assigned the value of" "true"
-isRaining:? = 1
+isRaining:? 1
 
 ` "winDirectionInitial" "is of type" "char" "and is assigned the value of" "N"
-winDirectionInitial:'' = 'N'
+winDirectionInitial:'' 'N'
 
 ` "stationName" "is of type" "string" "and is assigned the value of " "Mauna Loa Observatory"
-stationName:"" = "Mauna Loa Observatory"
+stationName:"" "Mauna Loa Observatory"
 
 ` "stationID" "is of type" "integer" "and is assigned the value of" "72528"
-stationID:0 = 72528
+stationID:0 72528
 
 ` "currentTemperatureCelsius" "is of type" "float" "and is assigned the value of" "15.5"
-currentTemperatureCelsius:0.0 = 15.5
+currentTemperatureCelsius:0.0 15.5
 
 ` "atmosphericCO2ppm" "is of type" "double" "and is assigned the value of" "425.789"
-atmosphericCO2ppm:0.00 = 425.789
+atmosphericCO2ppm:0.00 425.789
 
 ` "station" "is of type" "object" "and is assigned the value from an object"
 ` "such having properties: isRaining, winDirectionInitial, stationName,
 ` stationID, currentTemperatureCelsius, and atmosphericCO2ppm"
 station:<> = <
-    isRaining:? = 1
-    winDirectionInitial:'' = 'N'
-    stationName:"" = "Mauna Loa Observatory"
-    stationID:0 = 72528
-    currentTemperatureCelsius:0.0 = 15.5
-    atmosphericCO2ppm:0.00 = 425.789
+    isRaining:? 1
+    winDirectionInitial:'' 'N'
+    stationName:"" "Mauna Loa Observatory"
+    stationID:0 72528
+    currentTemperatureCelsius:0.0 15.5
+    atmosphericCO2ppm:0.00 425.789
 />
 ```
 
-**Important**
+**Noticed some redundancy?**
 
 ⚠️ Type inference could be used:
 The provided examples don't need to explicitly declare their types since the compiler is able to find by itself what to use based on the assigned values.
 
-The only exception is for the boolean data type.
-
-Also, you can use `:=` together to improve readability.
+Also, you can just use `:` to improve readability.
 
 ```wide
 ` You just read the same as before
 
-isRaining:? = 1
-winDirectionInitial:= 'N'
-stationName:= "Mauna Loa Observatory"
-stationID:= 72528
-currentTemperatureCelsius:= 15.5
+isRaining: 1
+winDirectionInitial: 'N'
+stationName: "Mauna Loa Observatory"
+stationID: 72528
+currentTemperatureCelsius: 15.5
 atmosphericCO2ppm:= 425.789
-station:= <
-    isRaining:? = 1
-    winDirectionInitial:= 'N'
-    stationName:= "Mauna Loa Observatory"
-    stationID:= 72528
-    currentTemperatureCelsius:= 15.5
-    atmosphericCO2ppm:= 425.789
+station: <
+    isRaining: 1
+    winDirectionInitial: 'N'
+    stationName: "Mauna Loa Observatory"
+    stationID: 72528
+    currentTemperatureCelsius: 15.5
+    atmosphericCO2ppm: 425.789
 />
 ```
 
@@ -206,7 +214,7 @@ station:<>
 This is also true for the objects' properties:
 
 ```wide
-station:= <
+station: <
     isRaining:?
     winDirectionInitial:''
     stationName:""
@@ -231,9 +239,25 @@ To print on screen you just enclose what you want to print inside double quotes 
 You can use curly braces inside double quotes to dinamically output values:
 
 ```wide
-name:= "Wide"
+name: "Wide"
 "Hello, {name}!" `outputs: "Hello, Wide!"
 
-price:= 9.99
+price: 9.99
 "It's ${9.99}." `outputs: "It's, $9.99."
 ```
+
+## Variables
+
+As you have already seen, variables are declared just passing the type:
+
+```wide
+name:"" "Wide"
+```
+
+or letting the compiler do it's job and infer the type:
+
+```wide
+name: "Wide"
+```
+
+or using the `=` explicit assignment operator, but again, you won't gonna need that!
